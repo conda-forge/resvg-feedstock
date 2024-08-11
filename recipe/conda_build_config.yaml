@@ -1,3 +1,3 @@
 # <https://conda-forge.org/news/2024/01/29/rust-175-osx-sdk/>
 c_stdlib_version:          # [osx and x86]
-  - '10.12'                # [osx and x86]
+  - '10.13'                # [osx and x86]

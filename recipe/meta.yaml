@@ -1,5 +1,5 @@
 {% set name = "resvg" %}
-{% set version = "0.43.0" %}
+{% set version = "0.44.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/RazrFalcon/resvg/archive/v{{ version }}.tar.gz
-  sha256: 263293020fc6cfadf6c4b6dc738f97ae33d3de8e47452fc6487c43392508a905
+  sha256: b45c906b4c72ff46405d74eb98ec1b93842f1528a8e835860f22b057b210306a
 
 build:
   number: 0

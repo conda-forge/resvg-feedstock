@@ -10,18 +10,18 @@ source:
   sha256: b45c906b4c72ff46405d74eb98ec1b93842f1528a8e835860f22b057b210306a
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('rust') }}
-    - {{ compiler('c') }}              # [not win]
-    - {{ stdlib("c") }}                # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("m2w64_c") }}          # [win]
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cargo-bundle-licenses
-  run:
-    # <https://conda-forge.org/news/2024/01/29/rust-175-osx-sdk/>
+    # # I had to disable this because it was causing a hang.
+    # # <https://matrix.to/#/!SOyumkgPRWoXfQYIFH:matrix.org/$17188919988GjPNB:gitter.im?via=matrix.org&via=gitter.im&via=ifisc.uib-csic.es>
+    # # For the 'strip' utility:
+    # - binutils  # [win]
 
 test:
   commands:

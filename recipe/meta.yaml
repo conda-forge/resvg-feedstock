@@ -18,6 +18,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - cargo-bundle-licenses
+    # For the 'strip' utility:
+    - binutils  #[win]
   run:
     # <https://conda-forge.org/news/2024/01/29/rust-175-osx-sdk/>
 

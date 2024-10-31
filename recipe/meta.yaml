@@ -18,8 +18,10 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - cargo-bundle-licenses
-    # For the 'strip' utility:
-    - binutils  # [win]
+    # # I had to disable this because it was causing a hang.
+    # # <https://matrix.to/#/!SOyumkgPRWoXfQYIFH:matrix.org/$17188919988GjPNB:gitter.im?via=matrix.org&via=gitter.im&via=ifisc.uib-csic.es>
+    # # For the 'strip' utility:
+    # - binutils  # [win]
   run:
     # <https://conda-forge.org/news/2024/01/29/rust-175-osx-sdk/>
 

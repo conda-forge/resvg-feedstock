@@ -15,10 +15,8 @@ build:
 requirements:
   build:
     - {{ compiler('rust') }}
-    - {{ compiler('c') }}              # [not win]
-    - {{ stdlib("c") }}                # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("m2w64_c") }}          # [win]
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cargo-bundle-licenses
   run:
     # <https://conda-forge.org/news/2024/01/29/rust-175-osx-sdk/>

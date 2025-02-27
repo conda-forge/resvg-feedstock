@@ -30,9 +30,10 @@ test:
 
 about:
   home: https://github.com/RazrFalcon/resvg
-  license: MPL-2.0
+  license: Apache-2.0 OR MIT
   license_file:
-    - LICENSE.txt
+    - LICENSE-MIT
+    - LICENSE-APACHE
     - THIRDPARTY.yml
   summary: An SVG rendering library.
 
